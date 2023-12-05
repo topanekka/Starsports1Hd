@@ -1,49 +1,313 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <title>Bitmovin Player Demo</title>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="text/html; charset=utf-8" />
+ <script type='text/javascript' src='//crumblerefunddiana.com/25/27/e5/2527e50c78c665244781c6f5a6c247e3.js'></script>  <script disable-devtool-auto='true' src='https://cdn.jsdelivr.net/npm/disable-devtool' clear-log='true' disable-select='true' disable-copy='true' disable-cut='true' disable-paste='true'></script>
 
-  <!-- Bitmovin Player -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bitmovin-player@8/bitmovinplayer.js"></script>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0 , user-scalable=no">
+ <meta name="viewport" content="width=device-width" />
+ <meta property="og:image" content="initial-thumbnail-url.jpg">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+   
+  
+  <title>TATA PLAY WEB</title>
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+ <script>
+  // alert('Due To Tata Play Blocking Website Doing Abnormal Activity During Playback')
+  //if (confirm("Due To Tata Play Blocking Website Doing Abnormal Activity During Playback We Will Fix As Soon As Possible") == true) {
+  ;
+  }
+ </script>
 
-  <style>
-    .player-wrapper {
-      width: 90%;
-      margin: 20px auto;
-      box-shadow: 0 0 30px rgba(0,0,0,0.7);
-    }
+ <style>
+  * {
+   box-sizing: border-box
+  }
+
+  html {
+   height: 100%
+  }
+
+  body {
+   min-height: 100%
+  }
+
+  body {
+   background: #fff;
+   padding: 0;
+   margin: 0;
+   border: 15px solid;
+   text-align: left;
+   border-image: url(https://s.cdpn.io/3/border-tv_1.png) 25% repeat;
+   line-height: 1;
+   background: w
+  }
+
+  #jwplayerDiv {
+   padding: 47.50% 0 0 0;
+   position: relative;
+   width: 90%;
+   box-shadow: 9px 9px 8px #8c8c8c, -29px -29px 58px #fff;
+   f;
+   border-radius: 10px;
+   overflow: hidden
+  }
+
+  ;
+
+  html {
+   background: #fff;
+   padding: 0;
+   margin: 0
+  }
+
+  a {
+   color: #000;
+   font-size: 18px;
+   text-decoration: none
+  }
+
+  h4 {
+   color: #000
+  }
+
+  p {
+   color: #000
+  }
+
+  video {
+   width: 100vw
+  }
+
+  button {
+   box-shadow: 1px 1px 1px #b3b3b3, -1px -1px 1px #fff;
+   border-radius: 5px;
+   padding: 2px
+  }
+
+  button:hover {
+   border: 1px solid rgb(255, 60, 140)
+  }
+
+  #video-player {
+   width: auto;
+   height: auto;
+   margin: 10px;
+   display: block;
+   background-color: #e8e8e8;
+   box-shadow: 5px 5px 5px #b3b3b3, -5px -5px 5px #fff;
+   border-radius: 10px;
+   padding: 0;
+   overflow: hidden
+  }
+
+  .program-info {
+   width: auto;
+   height: auto;
+   margin-top: 10px;
+   margin-bottom: 30px;
+   display: block;
+   background-color: #e8e8e8;
+   box-shadow: 5px 5px 5px #b3b3b3, -5px -5px 5px #fff;
+   border-radius: 10px;
+   padding: 10px
+  }
+
+  .logo {
+   display: inline-block;
+   width: 80px;
+   height: 80px;
+   margin-right: 10px;
+   background-color: #fff;
+   border-radius: 50%;
+   box-shadow: 5px 5px 10px #b3b3b3, -5px -5px 10px #fff
+  }
+
+  .channel-name {
+   font-family: 'Fjalla One', sans-serif;
+   font-weight: 700;
+   color: lightmagenta;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+   margin-top: 30px;
+   font-size: 1.5rem;
+   position: absolute
+  }
+
+  .s-n {
+   font-family: 'Gloock', serif;
+   font-weight: 700;
+   color: #333;
+   margin-top: 0;
+   font-size: 1.5rem;
+   position: absolute;
+   color: darkcyan;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, .3)
+  }
+
+  .program-name {
+   margin-top: 10px;
+   font-size: 1.4rem;
+   font-weight: 700;
+   color: #333
+  }
+
+  .program-description {
+   margin-top: 5px;
+   color: #666;
+   font-weight: 300
+  }
+
+  .program-timing {
+   margin-top: 5px;
+   font-style: italic;
+   color: #666
+  }
+
+  #parent-container {
+   position: relative;
+   padding: 0;
+   padding-top: 0;
+   box-shadow: 5px 5px 5px #b3b3b3, -5px -5px 5px #b3b3b3;
+   background-color: #e8e8e8;
+   border-radius: 10px
+  }
+
+  #container {
+   position: relative;
+   display: flex;
+   overflow-x: auto;
+   padding-left: 10px;
+   padding-bottom: 10px;
+   padding-top: 10px;
+   margin-top: 10px;
+   scrollbar-width: none;
+   -ms-overflow-style: none
+  }
+
+  #container::-webkit-scrollbar {
+   width: 0
+  }
+
+  .releted {
+   font-size: 1.4rem;
+   font-weight: 700;
+   color: #333;
+   font-family: 'Fjalla One', sans-serif;
+   color: lightmagenta;
+   text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+   position: inline;
+   padding-top: 5px;
+   padding-left: 5px;
+   padding-bottom: 5px;
+   margin-bottom: -20px
+  }
+
+  .card {
+   width: 120px;
+   height: 150px;
+   flex-shrink: 0;
+   margin-right: 10px;
+   border-radius: 10px;
+   background-color: white;
+   box-shadow: 5px 5px 5px white, -5px -5px 5px whitesmoke;
+
+  }
+
+  .card img {
+   width: 100%;
+   height: 100px;
+   padding: 10px 10px;
+   /*   filter: drop-shadow(0 0 0.75rem dodgerblue); */
+   margin: 10px 10px ⁰px px;
+   object-fit: contain
+  }
+
+  .card h2 {
+   margin: 5px;
+   font-size: 14px;
+   text-align: center;
+   padding: 5px
+  }
+
+  .slider-arrow {
+   position: absolute;
+   top: calc(50% - 20px);
+   width: 40px;
+   height: 40px;
+   background-color: rgba(30, 140, 255, .63);
+   color: #fff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   cursor: pointer;
+   z-index: 1;
+   transition: background-color 0.3s ease;
+   transform: rotate(90deg)
+  }
+
+  .slider-arrow {
+   position: absolute
+  }
+
+  .slider-arrow.left {
+   left: 10px
+  }
+
+  .slider-arrow.right {
+   right: 10px
+  }
+ </style>
   </style>
 </head>
+
 <body>
-<div class="player-wrapper">
-  <div id="player"></div>
-</div>
 
-<script type="text/javascript">
-  var conf = {
-    key: 'bd998b22-9ba9-45ec-9175-317be5cb1df7',
-    analytics: {
-      key: '23eb2da4-2e8c-42bc-a37c-825c0bb1570b',
-      title: 'Telegram - @LiveCricket_ABot',
-      videoId: 'wizard-Telegram_-_@LiveCricket_ABot-1689915961083',
-    },
-  };
+  
+  
 
-  var source = {
-    title: 'Telegram - @LiveCricket_ABot',
-    dash: 'https://bpprod5linear.akamaized.net/bpk-tv/irdeto_com_Channel_252/output/manifest.mpd',
-		drm: {
-      widevine: {
-        LA_URL: "https://tataplay.live.ott.irdeto.com/Widevine/getlicense?CrmId=tatasky&AccountId=tatasky&ContentId=400000020&ls_session=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImNvbnRyb2xfc2lnbmluZ19rZXlfcHJvZHVjdGlvbl8xNjYxMjc5NjMyMDEwIn0.eyJzdWIiOiIxMzU4NjY3NDk5IiwiaXNlIjp0cnVlLCJqdGkiOiI0NDY2YmQwNi1hNDRkLTQ4OGYtOTIyZi1jNmQzNmJhODY4ODQiLCJhaWQiOiJ0YXRhc2t5IiwiZXhwIjoxNjg5OTk2NDIxLCJuYW1lIjoiS3Jpc2huYSBVcmFuZyIsImlhdCI6MTY4OTkxMDAyMSwiZW50IjpbeyJlcGlkIjoiU3Vic2NyaXB0aW9uX0Jyb3dzZXJfU3RyZWFtaW5nIiwiYmlkIjoiMTAwMDAwMTE1NSJ9XSwiY3NtbyI6eyJtYXMiOiI2IiwiZHQiOiJ0cG1hIiwibWFzZCI6IjIifSwiaXNzIjoidHBtYV93ZWIifQ.lWcS34VRHT3SFDKmvAxz_y-nehKPJsVMb7djquRSALc",
-      },
-    },
-  };
 
-  var player = new bitmovin.player.Player(document.getElementById('player'), conf);
-  player.load(source);
-</script>
 
-</body>
-</html>
+
+<script src="https://content.jwplatform.com/libraries/Z79JsmAO.js"></script>
+
+<div id="jwplayerDiv"></div>
+<script>var _0xc57e=["","split","0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ+/","slice","indexOf","","",".","pow","reduce","reverse","0"];function _0xe60c(d,e,f){var g=_0xc57e[2][_0xc57e[1]](_0xc57e[0]);var h=g[_0xc57e[3]](0,e);var i=g[_0xc57e[3]](0,f);var j=d[_0xc57e[1]](_0xc57e[0])[_0xc57e[10]]()[_0xc57e[9]](function(a,b,c){if(h[_0xc57e[4]](b)!==-1)return a+=h[_0xc57e[4]](b)*(Math[_0xc57e[8]](e,c))},0);var k=_0xc57e[0];while(j>0){k=i[j%f]+k;j=(j-(j%f))/f}return k||_0xc57e[11]}eval(function(h,u,n,t,e,r){r="";for(var i=0,len=h.length;i<len;i++){var s="";while(h[i]!==n[e]){s+=h[i];i++}for(var j=0;j<n.length;j++)s=s.replace(new RegExp(n[j],"g"),j);r+=String.fromCharCode(_0xe60c(s,e,10)-t)}return decodeURIComponent(escape(r))}("CCDsCkYsCDSsCCHsCSCsCkCsCSLsCDDsSCSsSSDsCCDsCkYsCDSsCCHsCSCsCkCsCSLsCDDsSHHsCCCsCDdsSSDsSCCsSCdsCDksCSLsCDHsCDLsCDSsSCSsCkksSSSsSCYsCDSsCDDsCSLsCCHsCDYsCSCsCSHsSCYsSkDsSSSsSSDsCSCsCDLsCDHsCDYsSSDsSCHsSSSsSCYsCDksCDHsCDDsCSLsCDHsCSksCCSsCCCsCCdsCCYsSCYsSkDsSSSsSSDsCSLsCkSsCSCsCSksCDHsCSdsCCCsCDHsSSDsSCHsSSSsSCYsCkYsCCCsCSHsCDHsCCSsSCYsSkDsSSSsSSDsSDCsSDSsSDSsSSLsSSDsSCHsSSSsSCYsCCSsCSLsCCCsCCYsCCSsCDHsSCYsSkDsSSSsSSDsSDDsSDSsSDSsSSDsSCHsSSSsSCYsCCCsCCLsCSCsCCYsCSLsSCYsSkDsSSSsSSDsCCSsCDHsCDHsCDSsSkDsSDYsSDYsCCCsCCLsCSCsCCYsCSLsCDksCDHsCSCsCDHsCSCsCDSsCCHsCSCsCkCsSCdsCkYsCCSsCSCsCDHsCDksCDYsCCdsCCCsCCdsCSHsCCCsCSCsSCdsCSksCDYsCCLsSDYsCSHsCSCsCDksCCCsCCLsCSCsCCYsCSLsCDksSDYsCCHsCSCsCCdsCSHsCDksCSksCSCsCDSsCSLsSDYsSDCsSDDsSkSsSDSsCkSsSkYsSDDsSDSsSDYsSkYsSHHsSkYsSHCsSDLsSHLsSHDsSHksSHCsSDksSHHsSDHsSkCsSDDsSHHsSHCsSHCsSDCsSDdsSDHsSDLsSDHsSHDsSDdsSDCsSDDsSDDsSDSsSDksSDSsSHLsSDLsSHHsSHksSDDsSkYsSHLsSHLsSDHsSHdsSDLsSCdsCCDsCDSsCCYsSSDsSCHsSSSsSCYsCCHsCDYsCCYsCDYsSCYsSkDsSSSsSSDsCCSsCDHsCDHsCDSsSkDsSDYsSDYsCCCsCCLsCSCsCCYsCSLsCDksCDHsCSCsCDHsCSCsCDSsCCHsCSCsCkCsSCdsCkYsCCSsCSCsCDHsCDksCDYsCCdsCCCsCCdsCSHsCCCsCSCsSCdsCSksCDYsCCLsSDYsCSHsCSCsCDksCCCsCCLsCSCsCCYsCSLsCDksSDYsCCHsCSCsCCdsCSHsCDksCSksCSCsCDSsCSLsSDYsSDCsSDDsSkSsSDSsCkSsSkYsSDDsSDSsSDYsSkYsSHHsSkYsSHCsSDLsSHLsSHDsSHksSHCsSDksSHHsSDHsSkCsSDDsSHHsSHCsSHCsSDCsSDdsSDHsSDLsSDHsSHDsSDdsSDCsSDDsSDDsSDSsSDksSDSsSHLsSDLsSHHsSHksSDDsSkYsSHLsSHLsSDHsSHdsSDLsSCdsCCDsCDSsCCYsSSDsSCHsSSSsCSdsCCCsCCHsCSLsSkDsSSSsSSDsCCSsCDHsCDHsCDSsCDksSkDsSDYsSDYsCSDsCDSsCDSsCDDsCDYsCSHsSDLsCCHsCCCsCCdsCSLsCSCsCDDsSCdsCSCsCCksCSCsCCLsCSCsCCCsCkDsCSLsCSHsSCdsCCdsCSLsCDHsSDYsCSDsCDSsCCksSCLsCDHsCDdsSDYsCCCsCDDsCSHsCSLsCDHsCDYsCSYsCSksCDYsCCLsCSYsSHksCCSsCSCsCCdsCCdsCSLsCCHsCSYsSDDsSDLsSDDsSDYsCDYsCDLsCDHsCDSsCDLsCDHsSDYsCCLsCSCsCCdsCCCsCSdsCSLsCDksCDHsSCdsCCLsCDSsCSHsSSDsSCHsSSSsCDHsCkCsCDSsCSLsSkDsSSSsSSDsCSHsCSCsCDksCCSsSSDsSCHsSSSsCSHsCDDsCCLsSkDsSSSsCkksSSSsSSDsCSksCCHsCSLsCSCsCDDsCCksCSLsCkCsSSDsSkDsSSSsCkksSSSsSSDsCCksCSLsCkCsSLCsCSHsSSDsSkDsSSDsSDdsCSCsSkCsCSLsSDHsSDDsSDSsSDHsCSdsSDksCSdsSkSsSDLsSkYsSkYsCSLsCSDsCSdsSDdsCSLsSkYsSkCsCSDsSDksCSDsSDCsSkSsSDLsSkYsSDksCSdsSkSsSSDsSCHsSSDsCCksCSLsCkCsSSDsSkDsSSDsCSDsSkYsSDdsCSHsSkCsCSCsCSksSkCsCSLsCSLsSDksSDdsCSHsSDSsCSksCSdsSDdsSDCsSDdsSDLsSDksCSDsCSLsCSHsSkSsSDksCSDsCSLsCSLsSkSsCSDsCSHsSSDsSSSsCkLsSSSsCkLsLDsCkLsSCCsSkksLDs",81,"YSCDkHLds",41,8,4))</script>				<!-- end video player -->
+
+
+  
+  
+
+
+  
+<div class="program-info">
+  <img class="logo" src="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/imageContent-60-j5fdr6a0-v1/imageContent-60-j5fdr6a0-m1.png" alt="Channel Logo">
+  <span class="s-n">STREAMING NOW </span>
+  <span class="channel-name">Star Sports 1 Hindi HD<br><span class="live-text" style="color:brown"></span></span>
+
+ 
+  
+  
+  
+  
+    
+
+  
+  
+  
+
+
+
+	
+	
+
+
+
+
